@@ -16,6 +16,6 @@ jobs:
         python-version: ["3.11"]
 
     steps:
-    - name: Test with pytest
+    - name: running the python application
       run: |
-        python app.py
+        python3 app.py
