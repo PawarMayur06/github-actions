@@ -27,3 +27,8 @@ jobs:
       run: |
         pip install -r requirements.txt
         python3 webapp.py
+        
+    - name: running the node application
+      run: |
+        npm install
+        node node.js
