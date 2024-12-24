@@ -22,3 +22,8 @@ jobs:
     - name: running the python application
       run: |
         python3 app.py
+
+    - name: running the flask application
+      run: |
+        pip install -r requirements.txt
+        python3 flask.py
