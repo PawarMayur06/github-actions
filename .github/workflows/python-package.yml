@@ -23,12 +23,13 @@ jobs:
       run: |
         python3 app.py
 
-    # - name: running the flask application
-    #   run: |
-    #     pip install -r requirements.txt
-    #     python3 webapp.py
-        
-    - name: running the node application
+    - name: running the flask application
       run: |
-        npm install
-        node node.js
+        pip install -r requirements.txt
+        export FLASK_APP=app.py
+        flask run --host=0.0.0.0 --port=5000 & 
+        
+    # - name: running the node application
+    #   run: |
+    #     npm install
+    #     node node.js
