@@ -1,0 +1,19 @@
+name: "CodeQL"
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  analyze:
+    name: Analyze code with CodeQL
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up CodeQL
+        uses: github/codeql-action/setup-codeql@v2
+
+      - name: Analyze code
+        uses: github/codeql-action/analyze@v2
