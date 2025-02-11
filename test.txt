@@ -1,0 +1,2 @@
+Client_Secret = "u8Z9Q~9Y-Lqc6nj52HHI9qUBlL4D4CXqi_5zta8t"
+password = mayur@123
