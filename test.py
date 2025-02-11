@@ -1,0 +1,1 @@
+print("checking the CodeQl by using tis supported language")
